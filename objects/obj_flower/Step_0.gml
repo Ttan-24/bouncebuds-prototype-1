@@ -1,10 +1,16 @@
 /// @description Insert description here
 // You can write your code in this editor
+// jump 
 if(place_meeting(x, y, obj_player) && obj_player.vertical_speed > 0)
 {
-	obj_player.vertical_speed = -5;
+	obj_player.vertical_speed = jump_velocity;
 }
 
-y += 0.8
+// moves based on the players speed
+y += -obj_player.vertical_speed
 
-
+// destroys flowers after they go down
+if (y > room_height + 100) 
+{
+	instance_destroy()
+}
