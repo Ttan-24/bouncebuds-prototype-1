@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-vertical_speed = 0
-player_health = 3;
-vulnerable_timer = 0;
+
+enemy_speed = 0;
+move_speed = 3
+angle_to_player = 0
+//vulnerable_timer = 0;

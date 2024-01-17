@@ -15,4 +15,10 @@ if (keyboard_check(ord("A")))
 	x -= 2
 }
 
+if (player_health < 0)
+{
+	instance_destroy()	
+}
+
+vulnerable_timer -= 1/room_speed
 
